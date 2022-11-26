@@ -1,9 +1,15 @@
 import React from "react";
 
-const Todo = () => {
+const Todo = ({id,value}) => {
+     console.log(id,value)
+    
     return (
         <div>
-            <h1>Todo</h1>
+                <div>
+                    <img src="https://www.shutterstock.com/image-photo/surreal-image-african-elephant-wearing-260nw-1365289022.jpg" alt="img"/>
+                    <p>{id}</p>
+                    <p>{value}</p>
+                </div>
         </div>
     )
 }
