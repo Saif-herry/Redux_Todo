@@ -21,7 +21,7 @@ fetch("http://localhost:8080/todos").then((r)=>r.json()).then((d)=>setData(d))
                 <TodoInput/>
             </div>
             
-           <div>
+           <div className="items">
             {data.map((item)=>{
                 return <Todo key={item.id} {...item}/>
             })}
